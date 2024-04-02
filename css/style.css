@@ -141,7 +141,7 @@ body {
 }
 
 .profile-image {
-  width: 50%;
+  width: 100px;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
 }
