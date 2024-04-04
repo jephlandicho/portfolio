@@ -1,124 +1,825 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
     <title>Jephthah Landicho | Portfolio</title>
-    <meta name="title" content="Jephthah Landicho | Portfolio" />
-
-    <!-- Link -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/logo.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/logo.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/logo.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./assets/logo.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="./assets/logo.png"
-    />
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
   </head>
-  <body>
-    <header id="hero">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
+
+  <body oncontextmenu="return false">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
             <img src="./assets/logo.png" alt="Jephthah Landicho"
             />
-          </h1>
-          
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <!-- <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#">CONTACT</a></li>
-            <li><a class="nav-link" href="#">BlOG</a></li> -->
-            <li>
-              <a
-                class="nav-link btn btn-primary"
-                href="https://github.com/jephlandicho/"
-                >RESUME <i class="fas fa-arrow-right"></i
-              ></a>
+          </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
             </li>
-
-            <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
-              </label>
-            </div>
-            <!-- Hamburger menu -->
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a download="" href="assets\Jephthah_Jehosaphat_Landicho_Resume.pdf" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Resume
+              </a>
+            </li>
           </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
           </div>
         </div>
       </nav>
-
-      <section class="header-container">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero-blob">
-          <path fill="var(--blob-color)" d="M18.4,-21.5C31.6,-15.7,55.4,-20.7,66,-15.1C76.5,-9.5,73.8,6.8,68.1,21.4C62.3,35.9,53.5,48.7,41.6,57.2C29.8,65.7,14.9,70,3.8,64.7C-7.2,59.4,-14.4,44.6,-23.2,35.1C-32.1,25.6,-42.5,21.4,-53.7,11.6C-64.9,1.8,-76.8,-13.5,-74.5,-25.3C-72.2,-37.1,-55.6,-45.3,-40.8,-50.7C-26,-56,-13,-58.5,-5.2,-51.3C2.6,-44.2,5.2,-27.4,18.4,-21.5Z" transform="translate(100 100)" />
-      </svg>
-      
-        <div id="name">JEPHTHAH LANDICHO</div>
-        <div id="serviceDisplay"></div>
-        <div class="content-text">
-          <h2>Building bridges</h2>
-          <h2>between data and innovation.</h2>
-        </div>
-      <div id="socialMediaLinks">
-        <a href="https://facebook.com/jephhhhhhhhh/" target="_blank" class="btn btn-social-media"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/dyiptaaaaa" target="_blank" class="btn btn-social-media"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/jephthah-jehosaphat-landicho-a099a9277/" target="_blank" class="btn btn-social-media"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/jephlandicho/" target="_blank" class="btn btn-social-media"><i class="fab fa-github"></i></a>
-        <a href="mailto:jephthahlandicho1212@gmail.com?subject=I%20want%20to%20work%20with%20you" target="_blank" class="btn btn-social-media"><i class="fa fa-envelope"></i></a>
-        <!-- Add more social media icons as needed -->
-    </div>
-
-      </section>
-      
     </header>
+    <!-- main-->
 
-    <!-- Projects -->
-    
+    <main class="main">
+      <!--========================= Home =====================-->
 
-    <footer id="footer">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/jephthah-jehosaphat-landicho-a099a9277/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt home__icon"></i>
+              </a>
+
+              <a
+                href="https://github.com/jephlandicho/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt home__icon"></i>
+              </a>
+
+              <a
+                href="https://facebook.com/jephhhhhhhhh/"
+                target="_blank"
+                class="home__social-icon"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" {...$$props}>
+                <path fill="currentColor" d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11c-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46z" />
+            </svg>
+              </a>
+
+              <a
+              href="https://www.instagram.com/dyiptaaaaa"
+              target="_blank"
+              class="home__social-icon"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...$$props}>
+                <path fill="currentColor" d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216a4.61 4.61 0 0 0-2.633-2.633a6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42a4.607 4.607 0 0 0-2.633 2.633a6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632a6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419a4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187c.043-.962.056-1.267.056-3.71c-.002-2.442-.002-2.752-.058-3.709m-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246m4.807-8.339a1.077 1.077 0 0 1-1.078-1.078a1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078" />
+                <circle cx="11.994" cy="11.979" r="3.003" fill="currentColor" />
+            </svg>
+            </a>
+
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                      130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                      97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                      165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                      129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="-79"
+                    y="-30"
+                    xlink:href="assets/img/profile.jpg"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Jephthah Landicho</h1>
+              <h3 class="home__subtitle">
+                BS in Information Technology Major in Business Analytics
+              </h3>
+              <a href="#contact" class="button button--flex">
+                Contact me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--======================= About========================-->
+
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+
+        <div class="about__container container grid">
+
+          <div class="about__data">
+            <p class="about__description">
+                Graduating BS Information Technology, Major in Business Analytics at Batangas State University, ARASOF Nasugbu Campus. I enjoy creating websites, web apps, using HTML,CSS, JavaScript and PHP. I also created a mobile app using React Native. I'm also skilled in handling MySQL databases and love doing data analytics with Python.
+            </p>
+            <p class="about__description__2">
+                During my time as a student and through various projects, I've become adept at solving problems and working well with teams. Keeping up with the latest trends in IT is a priority for me, so I can take on challenges and deliver great results.
+            </p>
+
+            <!-- <div class="about__info">
+              <div>
+                <span class="about__info-title">08.50+</span>
+                <span class="about__info-name">Aggregate <br />CGPA</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">03+</span>
+                <span class="about__info-name"
+                  >Frontend <br />
+                  Projects</span
+                >
+              </div>
+
+              <div>
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">Months <br />experience</span>
+              </div>
+            </div> -->
+            <div class="skills__container container grid">
+                <div>
+                  <!--==================== Skill 1 =================-->
+                  <div class="skills__content skills__close">
+                    <div class="skills__header">
+                      <i class="fas fa-code skills__icon"></i>
       
+                      <div>
+                        <h1 class="skills__title">Languages & Database</h1>
+                      </div>
+      
+                      <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+      
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Python</h3>
+                            </div>
+                          </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">PHP</h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">JavaScript</h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">MySQL</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!--==================== Skill 2 =================-->
+                  <div class="skills__content skills__close">
+                    <div class="skills__header">
+                      <i class="fas fa-tools skills__icon"></i>
+      
+                      <div>
+                        <h1 class="skills__title">Tools & Platform</h1>
+                      </div>
+      
+                      <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+      
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Git</h3>
+                            </div>
+                          </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">Jupyter Notebook</h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">Visual Studio Code</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <!--==================== Skill 3 =================-->
+                  <div class="skills__content skills__close">
+                    <div class="skills__header">
+                      <i class="fas fa-computer skills__icon"></i>
+                      <div>
+                        <h1 class="skills__title">Technologies & Frameworks</h1>
+                      </div>
+      
+                      <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+      
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">HTML</h3>
+                            </div>
+                          </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">CSS</h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">React Native</h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">NodeJS</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <!--==================== Skill 4 =================-->
+                   <div class="skills__content skills__close">
+                    <div class="skills__header">
+                      <i class="fas fa-user skills__icon"></i>
+      
+                      <div>
+                        <h1 class="skills__title">Technical & Non-Technical</h1>
+                      </div>
+      
+                      <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+      
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Data Analytics</h3>
+                            </div>
+                          </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">DBMS</h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">Leadership</h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">Problem-solving</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===================== SKILLS =====================-->
+
+      <!-- <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        
+      </section> -->
+
+      <!--==================== Qualifications ==================-->
+
+      <section
+        class="qualification__section service__section"
+        id="qualification"
+      >
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div
+          class="qualification__container container grid services__container"
+        >
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--====== Qualification Content 1 ======-->
+            <div
+              class="qualification__content qualifiation__active services__content"
+              data-content
+              id="education"
+            >
+              <!--====== Qualification 1 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">SSLC</h3>
+                  <span class="qualification__subtitle"
+                    >S.V.S <br />High School</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    - 2019
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">
+                        Class 10th Summary :
+                      </h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: Science, Maths, English,
+                            Social Studies,Kannada,Hindi.
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Scored 91%</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Came runners up in inter-school Ball Badminton</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--====== Qualification 2 ======-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Class 12th</h3>
+                  <span class="qualification__subtitle"
+                    >Vidyodaya <br />Pre University College</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    - 2021
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">
+                        Class 12th Summary :
+                      </h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: Physics, Chemistry, Maths,
+                            English, Statistics , Hindi.
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Scored 87.5%</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--====== Qualification 3 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">College</h3>
+                  <span class="qualification__subtitle"
+                    >Canara Enginnering College, Manglore</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2025
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">College Summary :</h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>
+                            Studying core subjects of IT including DSA, Embedded
+                            systems, Design analysis and algorithm, Operating
+                            systems, and Computer architecture .
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>Scored an aggregate of 8.50 CGPA till now.</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>
+                            Student coordinator in media and
+                            publication club of the college.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!--<span class="qualification__line"></span>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== Portfolio ===================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- ------------------------portfollio 1-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio1.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Responsive-Weather-Forecast-Website
+                </h3>
+                <p class="portfolio__description">
+                  This project is a weather website that provides live weather
+                  updates and forecasts based on your location. Stay informed
+                  about current weather conditions, temperature, and more.
+                  Explore interactive maps, hourly/daily forecasts, and helpful
+                  insights. Stay ahead of the forecast and make the most of your
+                  day!
+                </p>
+                <a
+                  href="https://github.com/Venkateeshh/Weather-App"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://venkateeshh.github.io/Weather-App/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ------------------------portfollio 2-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio2.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Spotify-Clone</h3>
+                <p class="portfolio__description">
+                  Spotify Clone is a web app developed using HTML, CSS, and
+                  JavaScript. It recreates Spotify's interface and features,
+                  allowing users to browse, search, and play songs, create
+                  playlists, and discover new music. Responsive design ensures a
+                  seamless experience on any device. Contributions are welcome!
+                </p>
+                <a
+                  href="https://github.com/Venkateeshh/Spotify-Clone"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://venkateeshh.github.io/Spotify-Clone/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ------------------------portfollio 3-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio3.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Language Translator</h3>
+                <p class="portfolio__description">
+                  This language translator web app is a user-friendly tool built
+                  with HTML, CSS, and JavaScript. It leverages Google Translate
+                  API to seamlessly translate text between multiple languages.
+                  The app features a simple interface, ensuring smooth
+                  performance across devices..
+                </p>
+                <a
+                  href="https://github.com/Venkateeshh/Js-Language-Translator"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://venkateeshh.github.io/Js-Language-Translator/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ------------------------portfollio 4-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio4.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Sorting Visualizer</h3>
+                <p class="portfolio__description">
+                  Sorting Visualizer is a Java-based project that allows users
+                  to visualize various sorting algorithms in action using a
+                  Graphical User Interface (GUI). It provides an interactive and
+                  educational way to understand how different sorting algorithms
+                  work by visually demonstrating their step-by-step sorting
+                  process.
+                </p>
+                <a
+                  href="https://github.com/Venkateeshh/Sorting-Visualizer"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/posts/venkatesh-kamath-_algorithmdesign-sortingvisualizer-javaprojects-activity-7095437035125043200-fWDl?utm_source=share&utm_medium=member_desktop"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--===================== Contact Me =====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-calling contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Contact Me</h3>
+                <span class="contact__subtitle"
+                  ><a href="tel:6362243314"></a>+639482299844</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope-minus contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle"
+                  >jephthahlandicho1212@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Lian, Batangas, Philippines</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="https://formsubmit.co/jephthahlandicho1212@gmail.com" method="POST" class="contact__form grid">
+            <input type="hidden" name="_subject" value="I want to work with you">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="content__label">Name</label>
+                <input type="text" name="name" class="contact__input" required/>
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="content__label">Email</label>
+                <input type="Email" name="email" class="contact__input" required/>
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="content__label">Message</label>
+              <textarea
+                type="text"
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+                required name="message" ></textarea>
+            </div>
+
+            <div>
+              <button type="submit"
+                class="button button--flex"
+              >
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--================== Footer ===============-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Venkatesh</h1>
+            <span class="footer__subtitle"
+              >Information Science Engineering Student</span
+            >
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#qualification" class="footer__link">Qualification</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact-Me</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.instagram.com/venkateeshh/"
+              class="footer__social"
+              target="__blank"
+            >
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/Venkateeshhh"
+              target="__blank"
+              class="footer__social"
+            >
+            <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169; Venkatesh. All right reserved</p>
+      </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <!--================== SCROLL TOP ==================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
