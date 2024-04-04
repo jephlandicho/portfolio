@@ -61,11 +61,6 @@ if (currentTheme) {
 
 //Adding date
 
-let myDate = document.querySelector("#datee");
-
-const yes = new Date().getFullYear();
-myDate.innerHTML = yes;
-
 const phrases = ["Developer", "Programmer", "Data Analyst"];
 let currentPhrase = 0;
 let currentLetter = 0;

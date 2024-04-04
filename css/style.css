@@ -349,11 +349,11 @@ body {
 }
 
 .hero-blob {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 100%; /* Adjust as needed */
   height: auto;
   z-index: -1;
 }
@@ -363,7 +363,7 @@ body {
 
     /* Larger icon */
     .fab, .fa {
-      font-size: 24px;
+      font-size: 30px;
   }
   /* Simple animation */
   @keyframes fadeIn {
@@ -378,3 +378,43 @@ body {
       animation-name: fadeIn;
       animation-duration: 0.5s;
   }
+
+  /* CSS for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjustments for SVG blob */
+  .hero-blob {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    z-index: -1;
+  }
+
+  /* Adjustments for social media icons */
+  #socialMediaLinks {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* CSS for larger screens */
+@media screen and (min-width: 769px) {
+  /* Adjustments for SVG blob */
+  .hero-blob {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    z-index: -1;
+  }
+
+  /* Adjustments for social media icons */
+  #socialMediaLinks {
+    margin-top: 50px;
+    text-align: right;
+  }
+}
