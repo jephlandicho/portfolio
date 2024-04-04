@@ -66,7 +66,7 @@ let myDate = document.querySelector("#datee");
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
 
-const phrases = ["I'm a Developer", "I'm a Programmer", "I'm a Data Analyst"];
+const phrases = ["Developer", "Programmer", "Data Analyst"];
 let currentPhrase = 0;
 let currentLetter = 0;
 let isDeleting = false;
@@ -103,29 +103,3 @@ function type() {
 
 // Start the typing effect
 type();
-
-// Get the modal
-var modal = document.getElementById("popupModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("openPopup");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
