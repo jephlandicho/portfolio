@@ -65,3 +65,67 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+const phrases = ["I'm a Developer", "I'm a Programmer", "I'm a Data Analyst"];
+let currentPhrase = 0;
+let currentLetter = 0;
+let isDeleting = false;
+const typingSpeed = 200;
+const deletingSpeed = 100;
+const betweenPhraseDelay = 2000; // 2 seconds delay between phrases
+const element = document.getElementById('serviceDisplay');
+
+function type() {
+  const current = phrases[currentPhrase];
+  let displayText;
+
+  if (!isDeleting) {
+    displayText = current.substring(0, currentLetter++);
+    if (currentLetter === current.length + 1) {
+      isDeleting = true;
+      setTimeout(type, betweenPhraseDelay); // Pause at the end of a phrase
+    } else {
+      setTimeout(type, typingSpeed);
+    }
+  } else {
+    displayText = current.substring(0, currentLetter--);
+    if (currentLetter === 0) {
+      isDeleting = false;
+      currentPhrase = (currentPhrase + 1) % phrases.length; // Loop back to first phrase
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(type, deletingSpeed);
+    }
+  }
+
+  element.textContent = displayText;
+}
+
+// Start the typing effect
+type();
+
+// Get the modal
+var modal = document.getElementById("popupModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openPopup");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
