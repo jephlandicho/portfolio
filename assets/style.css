@@ -226,6 +226,12 @@ img {
   font-weight: var(--font-medium);
 }
 
+.verify__certificate{
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
 .nav__link:hover {
   color: var(--first-color);
 }
@@ -561,7 +567,7 @@ img {
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  margin-top: 20px;
 }
 
 .qualification__button {
@@ -810,16 +816,15 @@ img {
 /*=================== Footer ==================*/
 
 .footer {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .footer__container {
-  row-gap: 3.5rem;
+  row-gap: 1rem;
 }
 
 .footer__bg {
   background-color: var(--first-color-second);
-  padding: 2rem 0 3rem;
 }
 
 .footer__title {
@@ -856,7 +861,6 @@ img {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
-  margin-top: var(--mb-3);
 }
 
 .footer__title,
