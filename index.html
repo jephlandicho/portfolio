@@ -167,25 +167,6 @@
                 During my time as a student and through various projects, I've become adept at solving problems and working well with teams. Keeping up with the latest trends in IT is a priority for me, so I can take on challenges and deliver great results.
             </p>
 
-            <!-- <div class="about__info">
-              <div>
-                <span class="about__info-title">08.50+</span>
-                <span class="about__info-name">Aggregate <br />CGPA</span>
-              </div>
-
-              <div>
-                <span class="about__info-title">03+</span>
-                <span class="about__info-name"
-                  >Frontend <br />
-                  Projects</span
-                >
-              </div>
-
-              <div>
-                <span class="about__info-title">01+</span>
-                <span class="about__info-name">Months <br />experience</span>
-              </div>
-            </div> -->
             <div class="skills__container container grid">
                 <div>
                   <!--==================== Skill 1 =================-->
@@ -333,14 +314,6 @@
         </div>
       </section>
 
-      <!--===================== SKILLS =====================-->
-
-      <!-- <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
-
-        
-      </section> -->
 
       <!--==================== Qualifications ==================-->
 
@@ -597,54 +570,45 @@
           <div class="swiper-wrapper">
             <!-- ------------------------portfollio 1-------------------- -->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/portfolio1.png" class="portfolio__img" />
+              <img src="assets/img/portfolio1/portfolio1.png" class="portfolio__img" data-portfolio-index="0"/>
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
-                  Project Name
+                  NutriWISE
                 </h3>
                 <p class="portfolio__description">
-                  Project Description
+                  Nutritional Wellness Information System and Education, is my college capstone project. 
+                  It's accessible through both web and mobile applications, utilizing HTML, CSS, and JavaScript for the website, 
+                  and the React Native framework for the mobile app. 
+                  Our database is powered by MySQL, ensuring robust data management and seamless user experience across platforms.
                 </p>
                 <a
-                  href="#"
+                  href="https://github.com/jephlandicho/NutriWISE"
                   class="button button--flex button--small portfolio__button"
                 >
                   GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
               </div>
             </div>
 
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/portfolio1.png" class="portfolio__img" />
+              <img src="assets/img/portfolio2/porfolio1.png" class="portfolio__img" data-portfolio-index="1"/>
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
-                  Project Name 2
+                  Lupa Bahay
                 </h3>
                 <p class="portfolio__description">
-                  Project Description 2
+                  "Lupa Bahay" is a pivotal project from my college journey. It's a dynamic web application tailored for real estate companies, 
+                  offering seamless agent management and property browsing for customers. The technology stack includes HTML, CSS, JavaScript, and MySQL for a robust database backend. 
+                  The application boasts three distinct modules catering to Admin, Agents, and Customers, ensuring streamlined operations and enhanced user experiences.
                 </p>
                 <a
                   href="#"
                   class="button button--flex button--small portfolio__button"
                 >
                   GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
               </div>
@@ -687,4 +651,13 @@
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
   </body>
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Expanded view">
+    <a class="prev" onclick="changeImage(-1, event)">&#10094;</a>
+    <a class="next" onclick="changeImage(1, event)">&#10095;</a>
+  </div>
+  
+
 </html>

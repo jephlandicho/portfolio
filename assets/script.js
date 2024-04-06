@@ -216,3 +216,70 @@ function type() {
 
 // Start the typing effect
 type();
+
+// Define image galleries for each portfolio
+var imageGalleries = [
+  [
+    "assets/img/portfolio1/portfolio1.png",
+    "assets/img/portfolio1/portfolio2.png",
+    "assets/img/portfolio1/portfolio3.png",
+    "assets/img/portfolio1/portfolio4.png",
+    "assets/img/portfolio1/mobile_1.jpg",
+    "assets/img/portfolio1/mobile_2.jpg",
+    "assets/img/portfolio1/mobile_3.jpg",
+    "assets/img/portfolio1/mobile_4.jpg",
+    "assets/img/portfolio1/mobile_5.jpg"
+  ],
+  [
+    "assets/img/portfolio2/porfolio1.png",
+    "assets/img/portfolio2/porfolio2.png",
+    "assets/img/portfolio2/porfolio3.png",
+    "assets/img/portfolio2/porfolio4.png",
+    "assets/img/portfolio2/porfolio5.png",
+  ],
+  // Add more galleries as needed for other portfolios
+];
+
+var currentPortfolioIndex = 0; // Current portfolio index
+var currentIndex = 0; // Current image index
+var images = document.querySelectorAll('.portfolio__img'); // All portfolio images
+
+// Function to open the lightbox
+function openLightbox(portfolioIndex, imageIndex) {
+  currentPortfolioIndex = portfolioIndex;
+  currentIndex = imageIndex; // Start with the clicked image in the gallery
+  document.getElementById('lightbox').style.display = 'block';
+  updateLightboxImage();
+}
+
+// Close the lightbox
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+function updateLightboxImage() {
+  document.querySelector('.lightbox-img').src = imageGalleries[currentPortfolioIndex][currentIndex];
+}
+
+// Change the lightbox image
+function changeImage(step, event) {
+  if (event) {
+    event.stopPropagation(); // Prevent the click from closing the lightbox
+  }
+
+  currentIndex += step;
+  if (currentIndex >= imageGalleries[currentPortfolioIndex].length) {
+    currentIndex = 0; // Loop back to the first image
+  } else if (currentIndex < 0) {
+    currentIndex = imageGalleries[currentPortfolioIndex].length - 1; // Loop back to the last image
+  }
+  updateLightboxImage();
+}
+
+// Add click event to images
+images.forEach((img, index) => {
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', () => openLightbox(img.dataset.portfolioIndex, index)); // Passing portfolio index and image index
+});
+
+
