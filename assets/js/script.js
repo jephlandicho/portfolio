@@ -220,6 +220,12 @@ type();
 // Define image galleries for each portfolio
 var imageGalleries = [
   [
+    "assets/img/portfolio3/portfolio1.png",
+    "assets/img/portfolio3/portfolio2.png",
+    "assets/img/portfolio3/portfolio3.png",
+    "assets/img/portfolio3/portfolio4.png",
+  ],
+  [
     "assets/img/portfolio1/portfolio1.png",
     "assets/img/portfolio1/portfolio2.png",
     "assets/img/portfolio1/portfolio3.png",
@@ -237,6 +243,7 @@ var imageGalleries = [
     "assets/img/portfolio2/porfolio4.png",
     "assets/img/portfolio2/porfolio5.png",
   ],
+  
   // Add more galleries as needed for other portfolios
 ];
 
